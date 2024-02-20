@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Relogio from './componentes/Relogio';
 // quando a CSS é importada no arquivo principal, não precisa importar de novo nos componentens.
 import './App.css'
 
@@ -9,11 +9,13 @@ function App() {
     color:'#00f',
     fontSize:'3em',
   }
-
+  
   return (
     <div className="App">
 
       <section className='caixa'>
+
+        <Relogio></Relogio>
 
         <h1 style={{color:'#f00',fontSize:'5em'}} >CFB cursos</h1>
 
@@ -23,7 +25,7 @@ function App() {
 
         <a href="https://www.youtube.com/cfbcursos" target='blank'>CFB Cursos</a>
       </section>
-
+      
     </div>
   );
 }
