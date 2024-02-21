@@ -1,29 +1,2 @@
 @charset "UTF-8";
 
-
-body{
-  background-color: #ccc;
-}
-
-.caixa{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.caixa a{
-  text-decoration: none;
-  color: red;
-}
-
-.caixa a:hover{
-  background-color: red;
-  color: white;
-}
-
-.texto{
-  color: #0f0;
-  font-size: 2em;
-}
-
