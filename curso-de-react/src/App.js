@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
-import Numero from './componentes/Numero';
+import Led from './componentes/Led';
+
 
 // quando a CSS é importada no arquivo principal, não precisa importar de novo nos componentens.
 import './App.css'
@@ -7,15 +8,22 @@ import './App.css'
 
 function App() {
   
-  const [num,setNum] = useState(0)
+  const [ligado,setLigado]=useState(false)
+
+  const cancelar = (obj)=>{
+    return obj.preventDefault()
+  }
 
   return (
     <div className="App">
+      <Led ligado={ligado} setLigado={setLigado}></Led>
 
-      <p>valor do state num em App: {num}</p>
-
-      <Numero num={num} setNum={setNum}></Numero>
-
+      <a 
+      href="http://youtube.com/cfbcursos"
+      target='blank'
+      onClick={(e)=>cancelar(e)}>
+        cfb cursos
+      </a>
     </div>
   );
 }
