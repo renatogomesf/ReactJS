@@ -7,46 +7,25 @@ import './App.css'
 
 function App() {
 
-  const [cor,setCor] = useState(1)
+  const carros = [
+    {categoria: 'Esporte', preço: '110000,00', modelo: 'Golf GTI'},
+    {categoria: 'Esporte', preço: '120000,00', modelo: 'Camaro'},
+    {categoria: 'SUV', preço: '85000,00', modelo: 'HRV'},
+    {categoria: 'SUV', preço: '83000,00', modelo: 'T-Cross'},
+    {categoria: 'Utilitário', preço: '120000,00', modelo: 'Hillux'},
+    {categoria: 'Utilitário', preço: '90000,00', modelo: 'Ranger'},
+  ]
 
-  const vermelho = {color: '#f00'}
-  const verde = {color: '#0f0'}
-  const azul = {color: '#00f'}
-
-  const retCor=(c)=>{
-    if(c==1){
-      return vermelho
-    }else if(c==2){
-      return verde
-    }else{
-      return azul
-    }
-  }
-
-  const mudaCor=()=>{
-    setCor(cor+1)
-
-    if(cor > 2){
-      setCor(1)
-    }
-  }
-
-  const [horario,setHora] = useState()
-
-  const hora=()=>{
-    setHora(new Date().toLocaleTimeString())
-  }
-
-  setInterval(hora,1000)
+  const listaCarros = carros.map((el,i)=>{
+    return <li>{i} - {`categoria: ${el.categoria}, preço: ${el.preço}, modelo: ${el.modelo}`}</li>
+  })
 
   return (
     <div className="App">
       
-      <h1 style={retCor(cor)} >cfb cursos</h1>
-
-      <button onClick={()=>mudaCor()}>mudar cor</button>
-
-      <p>{horario}</p>
+      <ul>
+        {listaCarros}
+      </ul>
 
     </div>
   );
