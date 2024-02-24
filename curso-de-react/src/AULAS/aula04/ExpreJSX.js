@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from './componentes/img/logo.png'
+import Logo from '../../componentes/img/logo.png'
 
 function ExpreJSX() {
 
