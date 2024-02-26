@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CSSemReact from './AULAS/aula08/CSSemReact';
+import Render from './AULAS/aula09/Render';
 
 // quando a CSS é importada no arquivo principal, não precisa importar de novo nos componentens.
 import './App.css'
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       
-      <CSSemReact></CSSemReact>
+      <Render></Render>
       
     </div>
   );
