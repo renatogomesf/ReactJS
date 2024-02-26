@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CriarCompon from './AULAS/aula05/CriarCompon';
+import Props from './AULAS/aula06/Props';
 
 // quando a CSS é importada no arquivo principal, não precisa importar de novo nos componentens.
 import './App.css'
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       
-      <CriarCompon></CriarCompon>
+      <Props></Props>
       
     </div>
   );
