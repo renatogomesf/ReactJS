@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Props from './AULAS/aula06/Props';
+import EnviarFunc from './AULAS/aula07/EnviarFunc';
 
 // quando a CSS é importada no arquivo principal, não precisa importar de novo nos componentens.
 import './App.css'
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       
-      <Props></Props>
+      <EnviarFunc></EnviarFunc>
       
     </div>
   );
