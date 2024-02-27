@@ -5,7 +5,7 @@ function Formulario() {
 
     const [nome,setNome] = useState('')
 
-    // handle: modificador
+    // handle: função manipuladora/modificador
     const handleChangeNome=(e)=>{
         setNome(e.target.value)
     }
