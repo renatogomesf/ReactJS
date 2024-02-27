@@ -14,7 +14,6 @@ export default function ObjState(){
         }else if(e.target.getAttribute('name')=='fano'){
             setForm({"nome":form.nome,"curso":form.curso,"ano":e.target.value})
         }
-
     }
 
     return(
