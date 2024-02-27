@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Eventos from './AULAS/aula11/Eventos';
+import RenderCondicional from './AULAS/aula12/RenderCondicional';
 
 // quando a CSS é importada no arquivo principal, não precisa importar de novo nos componentens.
 import './App.css'
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       
-      <Eventos></Eventos>
+      <RenderCondicional></RenderCondicional>
       
     </div>
   );
