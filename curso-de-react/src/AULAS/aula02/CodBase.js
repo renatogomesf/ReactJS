@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function app() {
+export default function app() {
 
   return (
     <div>
@@ -9,7 +9,5 @@ function app() {
        
       
     </div>
-  );
+  )
 }
-
-export default app;
