@@ -1,6 +1,6 @@
 import React from 'react'
 
-import LOCALStorage from './AULAS/aula20/LOCALStorage';
+import ComponeClasses from './AULAS/aula21/ComponeClasses';
 
 // quando a CSS é importada no arquivo principal, não precisa importar de novo nos componentens.
 import './App.css'
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       
-      <LOCALStorage></LOCALStorage>
+        <ComponeClasses></ComponeClasses>
       
     </div>
   );
