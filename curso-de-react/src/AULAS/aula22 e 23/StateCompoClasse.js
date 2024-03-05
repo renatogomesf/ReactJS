@@ -7,7 +7,7 @@ export default function StateCompoClasse() {
         <>
             <h1>Componentes de Classe</h1>
 
-            <Carro></Carro>
+            <Carro fator={1}></Carro>
         </>
     )
 }
