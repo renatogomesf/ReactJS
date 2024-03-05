@@ -11,6 +11,9 @@ export default class Carro extends React.Component {
             ligado:false,
             velAtual:0
         }
+
+        // estou bindando a função "ligarDesligar" com o "this" da classe carro.
+        this.ld=this.ligarDesligar.bind(this)
     }
 
     ligarDesligar(){
@@ -42,7 +45,7 @@ export default class Carro extends React.Component {
                 <p>Ligado: {this.state.ligado?'sim':'não'}</p>
                 <p>vel.Atual: {this.state.velAtual}</p>
 
-                <button onClick={()=>this.ligarDesligar()}>{this.state.ligado?'Desligar carro':'Ligar carro'}</button>
+                <button onClick={this.ld}>{this.state.ligado?'Desligar carro':'Ligar carro'}</button>
 
                 <button onClick={()=>this.acelerar()}>Acelerar</button>
             </div>
