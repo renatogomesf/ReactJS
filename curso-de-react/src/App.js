@@ -1,6 +1,6 @@
 import React from 'react'
 
-import StateCompoClasse from './AULAS/aula22, 23, 24 e 25/StateCompoClasse';
+import VariaveisGlobais from './AULAS/aula27/VariaveisGlobais'
 
 // quando a CSS é importada no arquivo principal, não precisa importar de novo nos componentens.
 import './App.css'
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       
-        <StateCompoClasse></StateCompoClasse>
+        <VariaveisGlobais></VariaveisGlobais>
       
     </div>
   );
