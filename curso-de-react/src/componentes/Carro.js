@@ -35,6 +35,21 @@ export default class Carro extends React.Component {
         )
     }
 
+    // chamado quando o componente é criado.
+    componentDidMount(){
+        console.log('o carro foi criado')
+    }
+
+    // chamado quando o componente é atualizado.
+    componentDidUpdate(){
+        console.log('o carro foi atualizado')
+    }
+
+    // chamado quando o componente é removido/desmontado.
+    componentWillUnmount(){
+        console.log('o carro foi removido')
+    }
+
     render(){
         return (
             <div>
