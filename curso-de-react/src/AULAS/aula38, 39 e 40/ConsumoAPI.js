@@ -7,9 +7,8 @@ export default function ConsumoAPI() {
 
     useEffect(()=>{
         axios.get('https://70724f1f-c86c-4d55-ba5f-2ee41a493bae-00-1pfzxbybk37v4.janeway.replit.dev/')
-        .then((res)=>{
-            const dadosCarros = res.data
-            setCarros(dadosCarros)
+        .then((response)=>{
+            setCarros(response.data)
         })
     })
 
@@ -17,7 +16,7 @@ export default function ConsumoAPI() {
         <div>
             {carros.map((carro)=>{
                 return (
-                    <div>{carro.id} - {carro.marca} - {carro.modelo} </div>
+                    <div key={carro.id}>{carro.id} - {carro.marca} - {carro.modelo} </div>
                 )
             })}
         </div>
